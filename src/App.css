@@ -1,0 +1,130 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+
+ .header {
+  text-align: center;
+  align-items: center;
+  background-color:  #f5f5f5;
+  color: #333333;
+  padding: 20px;
+  top: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.total-money {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ff94;
+}
+
+.bill-gates-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+
+/* Sticky Balance Bar */
+.balance-bar {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #32CC71, #12BC9C);
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Grid System */
+.product-grid {
+  display: grid;
+   grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* product card */
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.product-card p {
+ color: #24C486;
+ font-weight: semibold;
+ font-size: 1.2rem;
+}
+
+
+.product-card button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #32CC71, #12BC9C);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-card .sellButton {
+ background: linear-gradient(to right, #F43B81, #F53B57);
+}
+
+.product-card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.receipt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.receipt-total-line {
+  height: 1px;
+  width: 100%;
+  border-top: 2px solid #555;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.total {
+ margin-bottom: 4rem;
+  margin-top: 1rem;
+  
+}
+
+/*  2 column */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  3 column */
+@media (min-width: 1199px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
