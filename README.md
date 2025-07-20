@@ -4,7 +4,7 @@ This project is a web application that allows users to spend Bill Gates' imagina
 
 ## 🚀 Live Demo
 
-🔗 [View the Project Live](https://senin-linkin.netlify.app)
+🔗 [View the Project Live](https://jocular-zabaione-175844.netlify.app)
 
 ## 🛠️ Technologies Used
 
